@@ -1,6 +1,8 @@
 // import the CSS framework
 @import "bootstrap";
 
+/*  //Comment All OverRides
+
 // make all images responsive by default
 img {
   @extend .img-responsive;
@@ -43,3 +45,5 @@ section {
   @extend .row;
   margin-top: 20px;
   }
+
+  */
