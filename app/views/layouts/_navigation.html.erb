@@ -1,28 +1,23 @@
 <%# navigation styled for Bootstrap 3.0 %>
-<nav class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner">
+<header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner">
   <div class="container">
       <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
-            <a class="navbar-brand">
-            <img src="/assets/logo.png" alt="logo"></a>
+        </button>
+          <a class="navbar-brand" href="visitors.html.erb">
+          <img src="/assets/logo.png" alt="logo"></a>
       </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><%= link_to 'Home', new_visitor_path %></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><%= render 'layouts/navigation_links' %></li>
-                    <li><a href="blog.html">Blog</a></li> 
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li><%= render 'layouts/navigation_links' %></li>
+              <li><%= link_to 'Portfolio', page_path('portfolio') %></li>
+              <li><%= link_to 'Blog', page_path('blog') %></li> 
+          </ul>
         </div>
+      </div>
     </div>
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-</nav>
+</header>
